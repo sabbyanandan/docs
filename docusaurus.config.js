@@ -153,7 +153,7 @@ module.exports = {
           sourceBaseUrl: "https://raw.githubusercontent.com/hirosystems/clarinet/develop/docs/feature-guides", 
           outDir: "docs/clarinet/feature-guides", 
           documents: ["analyze-with-check-checker.md",
-          "chainhooks.md", "clarinet-deploy.md", "clarinet-integrate.md","extend-clarinet.md" ], 
+          "chainhooks.md", "clarinet-integrate.md","extend-clarinet.md" ], 
           
          
           
@@ -262,6 +262,7 @@ module.exports = {
 
             return `https://github.com/hirosystems/docs/blob/main/docs/${docPath}`;
           },
+          docItemComponent: require.resolve('./src/pages/index.tsx'),
           routeBasePath: '/',
           breadcrumbs: false, // todo: enable at some point (breadcrumbs need a design overhaul first)
         },
